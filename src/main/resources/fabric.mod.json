@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "ThePhoneMod",
+  "version": "${version}",
+  "name": "ThePhoneMod",
+  "description": "A mod that gives you access to a phone where you can play minigames",
+  "authors": [
+    "youtissoum"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ThePhoneMod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.youtissoum.thephonemod.client.ThePhoneModClient"
+    ],
+    "main": [
+      "me.youtissoum.thephonemod.ThePhoneMod"
+    ]
+  },
+  "mixins": [
+    "ThePhoneMod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
